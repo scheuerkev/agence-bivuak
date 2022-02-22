@@ -1,0 +1,17 @@
+{
+  "name": "agence-bivuak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/style.scss style/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "emmet": "^2.3.6",
+    "eslint": "^8.9.0",
+    "prettier": "^2.5.1"
+  }
+}
