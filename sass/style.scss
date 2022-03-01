@@ -1,3 +1,7 @@
-p {
-  color: rgb(199, 199, 15);
-}
+@import "./utils/variables";
+@import "./components/mixins";
+@import "./base/typography";
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/main";
+@import "./components/text_decoration";

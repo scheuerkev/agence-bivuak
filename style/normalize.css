@@ -10,7 +10,17 @@
 
 html {
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  /* 2 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 /* Sections
@@ -75,6 +85,8 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: black;
 }
 
 /**
@@ -147,6 +159,7 @@ sup {
 
 img {
   border-style: none;
+  max-width: 100%;
 }
 
 /* Forms
@@ -348,4 +361,8 @@ template {
 
 [hidden] {
   display: none;
+}
+
+ul {
+  list-style-type: none;
 }
