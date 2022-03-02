@@ -166,6 +166,7 @@ main {
 }
 .maintenance {
   min-height: calc(100vh - 150px);
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,34 +222,34 @@ main {
   position: relative;
 }
 
-#telephone {
+input {
   position: relative;
   width: 100%;
   height: 30px;
   line-height: 30px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   border: 0;
   background: none;
   outline: none;
-  border-bottom: 2px solid #00121a;
+  border-bottom: 1px solid #00121a;
 }
-#telephone::before {
+input::before {
   content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background: purple;
 }
-#telephone:focus ~ label, #telephone:valid ~ label {
-  color: #ba3d03;
-  transform: translateY(-20px);
+input:focus ~ label {
+  color: #f09c00;
+  transform: translateY(-10px);
   font-size: 0.825rem;
   cursor: default;
 }
-#telephone:focus ~ .underline {
+input:focus ~ .underline {
   width: 100%;
 }
 
@@ -258,7 +259,6 @@ label {
   left: 0;
   height: 30px;
   line-height: 30px;
-  color: red;
   cursor: text;
   transition: all 200ms ease-in-out;
   z-index: 10;
@@ -272,7 +272,7 @@ label {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #ba3d03;
+  background-color: #f09c00;
   transition: all 200ms ease-in-out;
 }
 
