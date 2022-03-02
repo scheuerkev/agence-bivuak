@@ -56,14 +56,15 @@
         width="200"
         alt="Logo de l'Agence Bivuak"
       />
-      <form
-        class="form-container form-callback"
-        name="contact"
-        method="POST"
-        data-netlify="true"
-      >
+      <form class="form-container form-callback" name="contact" netlify>
         <div class="input-container">
-          <input type="text" name="telephone" id="telephone" />
+          <input
+            type="tel"
+            name="telephone"
+            pattern="[0]{1}[0-9]{9}"
+            id="telephone"
+            required
+          />
           <label for="telephone">Téléphone</label>
           <span class="underline"></span>
         </div>
