@@ -6,7 +6,6 @@
 }
 
 .form-callback {
-  overflow: hidden;
   position: relative;
 }
 
@@ -31,12 +30,12 @@ input {
   border: 0;
   background: none;
   outline: none;
-  border-bottom: 1px solid $primary-black;
+  border-bottom: 1px solid rgba(46, 46, 46, 0.5);
 
   &:focus {
     & ~ label {
       color: $secondary-cambodge;
-      transform: translateY(-10px);
+      transform: translateY(-20px);
       font-size: 0.825rem;
       cursor: default;
     }
@@ -61,7 +60,7 @@ label {
   content: "";
   display: block;
   position: absolute;
-  bottom: -2px;
+  bottom: 50px;
   left: 0;
   width: 0;
   height: 2px;
