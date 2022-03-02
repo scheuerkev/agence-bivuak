@@ -92,3 +92,11 @@ main {
     font-size: 1.7rem;
   }
 }
+
+.maintenance {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
