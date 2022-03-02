@@ -7,14 +7,13 @@ body {
   font-size: 1.5rem;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1 {
   font-family: "Amaranth", sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-weight: 700;
   color: #099295;
 }
@@ -37,7 +36,7 @@ header::after {
   display: block;
   width: 900px;
   height: 900px;
-  background: url(../assets/img/barry.png) no-repeat right/contain;
+  background: url(../assets/img/barry.webp) no-repeat right/contain;
   position: absolute;
   top: -60px;
   right: 0;
@@ -48,7 +47,7 @@ header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1030px;
+  max-width: 1150px;
   width: 100%;
 }
 header .navbar-links {
@@ -69,13 +68,13 @@ header .navbar-links {
 }
 
 main {
-  max-width: 1080px;
+  max-width: 1200px;
   width: 100%;
   margin: auto;
 }
 
 .value-proposition {
-  height: calc(100vh - 85px);
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -86,8 +85,8 @@ main {
   line-height: 3rem;
 }
 .value-proposition--title {
-  width: 60%;
-  font-size: 4rem;
+  width: 50%;
+  font-size: 5rem;
   line-height: 6rem;
 }
 .value-proposition--image {
@@ -111,6 +110,7 @@ main {
   flex-direction: column;
   width: 30%;
   gap: 2rem;
+  padding-bottom: 5rem;
 }
 
 .btn {
@@ -199,6 +199,56 @@ main {
   opacity: 0.15;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1rem;
+}
+
+.howto {
+  position: relative;
+  height: calc(100vh - 3rem);
+}
+.howto h2 {
+  margin-top: 3rem;
+}
+.howto img {
+  box-shadow: 6px 6px 0 0 #f09c00;
+}
+
+.grid-container {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card-list {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 275px;
+}
+.card-list i {
+  margin-right: 1rem;
+  color: #ba3d03;
+  opacity: 1;
+}
+
+.contact {
+  height: calc(100vh - 150px);
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  box-shadow: 6px -6px 0 0 #f09c00;
 }
 
 /*# sourceMappingURL=style.css.map */
