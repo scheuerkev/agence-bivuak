@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass sass/style.scss style/style.css --watch --style compressed",
-    "prefix": "postcss ./style/normalize.css --use autoprefixer -d ./style/prefix/",
+    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefix/",
     "build": "babel ./javascript/ -d ./javascript/dist/"
   },
   "keywords": [],
