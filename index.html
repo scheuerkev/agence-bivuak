@@ -37,13 +37,14 @@
       href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/normalize.css" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/prefix/normalize.css" />
+    <link rel="stylesheet" href="./style/prefix/style.css" />
     <script
       src="https://kit.fontawesome.com/e7afc03f4f.js"
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="./javascript/dist/index.js" defer></script>
     <title>
       Agence Bivuak : Sites web à Montpellier | SEO | Rédation et référencement
     </title>
@@ -53,24 +54,28 @@
       <h1>Le site de l'Agence Bivuak est quasiment prêt !</h1>
       <img
         src="./assets/img/logo_small.webp"
-        width="200"
+        width="150"
         alt="Logo de l'Agence Bivuak"
       />
-      <form class="form-container form-callback" name="contact" netlify>
+      <form
+        class="form-container form-callback"
+        name="contact"
+        method="POST"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
         <div class="input-container">
-          <input
-            type="tel"
-            name="telephone"
-            pattern="[0]{1}[0-9]{9}"
-            id="telephone"
-            required
-          />
+          <input type="tel" name="telephone" id="telephone" />
           <label for="telephone">Téléphone</label>
           <span class="underline"></span>
+          <label class="hiddenPot">
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
         </div>
-        <button class="btn" type="submit">
+        <button class="btn" disabled type="submit">
           <i class="fa-solid fa-square-phone"></i>Être rappelé
         </button>
+        <span class="notice">Numéro de téléphone au format 0123456789</span>
       </form>
     </main>
     <footer>

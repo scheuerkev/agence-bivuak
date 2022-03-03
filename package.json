@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass sass/style.scss style/style.css --watch"
+    "sass": "sass sass/style.scss style/style.css --watch --style compressed",
+    "prefix": "postcss ./style/normalize.css --use autoprefixer -d ./style/prefix/",
+    "build": "babel ./javascript/ -d ./javascript/dist/"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +15,11 @@
     "emmet": "^2.3.6",
     "eslint": "^8.9.0",
     "prettier": "^2.5.1"
+  },
+  "browserslist": "last 4 versions",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11"
   }
 }

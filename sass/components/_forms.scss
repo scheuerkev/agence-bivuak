@@ -62,3 +62,24 @@ label {
   background-color: $secondary-cambodge;
   transition: all 200ms ease-in-out;
 }
+
+.hiddenPot {
+  display: none;
+}
+
+.btn:disabled {
+  &:hover {
+    box-shadow: 6px 6px 0 0 black;
+    i {
+      animation: none;
+    }
+  }
+  background-color: #ccc;
+  cursor: initial;
+}
+
+.notice {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: $primary-black;
+}
