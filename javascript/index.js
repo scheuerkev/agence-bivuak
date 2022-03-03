@@ -10,5 +10,5 @@ inputTel.addEventListener("input", () => {
 
 inputTel.addEventListener("blur", () => {
   inputTel.value = "";
-  submitButton.disabled = true;
+  //submitButton.disabled = true;
 });
