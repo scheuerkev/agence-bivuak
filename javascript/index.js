@@ -7,8 +7,3 @@ inputTel.addEventListener("input", () => {
     submitButton.removeAttribute("disabled");
   }
 });
-
-inputTel.addEventListener("blur", () => {
-  inputTel.value = "";
-  //submitButton.disabled = true;
-});

@@ -26,7 +26,8 @@ input {
   color: rgba(46, 46, 46, 0.5);
   border-bottom: 2px solid rgba(46, 46, 46, 0.5);
 
-  &:focus {
+  &:focus,
+  &:valid {
     & ~ label {
       color: $secondary-cambodge;
       transform: translateY(-20px);
