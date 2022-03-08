@@ -68,22 +68,3 @@
     color: $secondary-mahogany;
   }
 }
-
-@media screen and (max-width: 1440px) {
-  .value-proposition {
-    &--title {
-      width: 44%;
-    }
-
-    &--image {
-      height: 75%;
-    }
-  }
-  .btn-container {
-    width: 25%;
-  }
-
-  .btn {
-    font-size: 1.7rem;
-  }
-}
